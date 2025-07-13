@@ -1,0 +1,49 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 2px solid lime; */
+}
+:root{
+    /* Colors */
+    --white: #FFFFFF;
+    --grey: #6C6C72;
+    --black: #232233;
+    --royal-blue: #5956E9;
+
+    /* Typography */
+    --font-family: "Josefin Sans", "sans-serif";
+
+    --text-h1: 700 3.81rem/100% var(--font-family);
+    --text-h2: 700 3.052rem/130% var(--font-family);
+    --text-h3: 600 2.441rem/158% var(--font-family);
+    --text-h4: 700 1.953rem/147%var(--font-family);
+    --text-h5: 600 1.563rem/137% var(--font-family);
+    --text-h6: 600 1.25rem/130% var(--font-family);
+    --text-md: 400 1rem/124% var(--font-family);
+    --text-sm: 300 0.8rem/100% var(--font-family);
+}
+h1{
+    font: var(--text-h1);
+}
+h2{
+    font: var(--text-h2);
+}
+h3{
+    font: var(--text-h3);
+}
+h4{
+    font: var(--text-h4);
+}
+h5{
+    font: var(--text-h5);
+}
+h6{
+    font: var(--text-h6);
+}
+p{
+    font: var(--text-md);
+}
+span{
+    font: var(--text-sm);
+}
