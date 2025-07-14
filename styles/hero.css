@@ -1,0 +1,124 @@
+section.hero{
+    overflow: hidden;
+    height: min(1024px);
+    background-image: url(../assets/Hero/Background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding-left: 85px;
+    padding-top: 135px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 124px;
+    align-items: center;
+    z-index: 99;
+
+    & .hero-CTA{
+        justify-self: center;
+        display: grid;
+        position: relative;
+        z-index: 3;
+        background-color: var(--white);
+
+        grid-template-columns: auto auto 1fr;
+        column-gap: 14px;
+        row-gap: 5px;
+
+        & > *{
+            z-index: inherit;
+        }
+        & .CTA-title{
+            color: var(--royal-blue);
+        }
+        & .CTA-text{
+            margin-top: 13px;
+            color: var(--grey);
+        }
+        & .CTA-subtext{
+            margin-top: 49px;
+        }
+
+    }
+    & > .image-wrapper{
+        width: 100%;
+        overflow: hidden;
+        justify-self: center;
+        & img{
+            transform: translateX(4vw);
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    section.hero{
+        grid-template-columns: 3fr 2fr;
+        gap: 40px;
+        justify-content: space-between;
+        padding-left: 40px;
+        & .hero-CTA{
+            width: min(356px, 46vw);
+            padding: 14px 18px;
+            & .CTA-title{
+                font: var(--text-h4);
+            }
+            & .CTA-text{
+                font: var(--text-md);
+                margin-top: 1px;
+            }
+            & .CTA-subtext{
+                font: var(--text-h6);
+                margin-block: 18px;
+            }
+        }
+        & > .image-wrapper{
+            width: 43.5vw;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    section.hero{
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 60px;
+        padding-block: 208px;
+        padding-inline: 16px;
+        & .hero-CTA{
+            width: min(340px, 90vw);
+            padding: 25px 18px;
+            & .CTA-title{
+                font: var(--text-h5);
+            }
+            & .CTA-text{
+                font: var(--text-md);
+                margin-top: 1px;
+            }
+            & .CTA-subtext{
+                font: var(--text-h6);
+                margin-block: 18px;
+            }
+        }
+        & .image-wrapper{
+            transform: translateX(18vw);
+        }
+    }
+}
+@media (min-width: 1440px) {
+    section.hero{
+        & .hero-CTA{
+            width: min(570px, 40vw);
+            padding: 40px 30px;
+            & .CTA-title{
+                font: var(--text-h2);
+            }
+            & .CTA-text{
+                font: var(--text-md);
+            }
+            & .CTA-subtext{
+                font: var(--text-h5);
+            }
+        }
+    }
+}
