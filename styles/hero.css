@@ -7,12 +7,12 @@ section.hero{
     background-size: cover;
 
     padding-left: 85px;
-    padding-top: 135px;
+    padding-top: 205px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 124px;
     align-items: center;
-    z-index: 99;
+    z-index: 2;
 
     & .hero-CTA{
         justify-self: center;
