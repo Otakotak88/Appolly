@@ -6,7 +6,7 @@ section.hero{
     background-position: center;
     background-size: cover;
 
-    padding-left: 85px;
+    padding-inline-start: 85px;
     padding-top: 205px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -18,7 +18,7 @@ section.hero{
         justify-self: center;
         display: grid;
         position: relative;
-        z-index: 3;
+        z-index: 1;
         background-color: var(--white);
 
         grid-template-columns: auto auto 1fr;
@@ -26,7 +26,7 @@ section.hero{
         row-gap: 5px;
 
         & > *{
-            z-index: inherit;
+            z-index: 3;
         }
         & .CTA-title{
             color: var(--royal-blue);
@@ -56,7 +56,7 @@ section.hero{
         grid-template-columns: 3fr 2fr;
         gap: 40px;
         justify-content: space-between;
-        padding-left: 40px;
+        padding-inline: 110px 20px;
         & .hero-CTA{
             width: min(356px, 46vw);
             padding: 14px 18px;
@@ -82,7 +82,7 @@ section.hero{
     section.hero{
         height: auto;
         grid-template-columns: 1fr;
-        gap: 60px;
+        gap: 100px;
         padding-block: 208px;
         padding-inline: 16px;
         & .hero-CTA{
